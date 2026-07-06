@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hisen Corporation - Welcome</title>
+    <title>Hisen Corporation - Contact Us</title>
 </head>
 <style>
     body {
@@ -75,7 +75,9 @@
         margin-bottom: 15px;
     }
 
-    button {
+    button,
+    input[type="submit"],
+    input[type="reset"] {
         background-color: #cccccc;
         border: 2px outset #ffffff;
         padding: 3px 10px;
@@ -85,13 +87,19 @@
         cursor: pointer;
     }
 
-    button:active {
+    button:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active {
         border: 2px inset #ffffff;
     }
 
-    input[type="search"] {
+    input[type="search"],
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
         border: 2px inset #ffffff;
-        padding: 2px;
+        padding: 3px;
         font-family: Arial, sans-serif;
         font-size: 12px;
         background-color: #ffffff;
@@ -214,8 +222,9 @@
         <table class="main-table" width="100%" cellpadding="0" cellspacing="0">
             <tr>
                 <td colspan="2" class="welcome-header">
-                    <font size="6"><b>Welcome to Hisen Corporation!</b></font><br>
-                    <font size="2"><i>"Bridging Yesterday's Foundations with Tomorrow's Innovations"</i></font>
+                    <font size="6"><b>Contact Hisen Corporation</b></font><br>
+                    <font size="2"><i>"Get in Touch with our Manufacturing, Telecom, and Administration Departments"</i>
+                    </font>
                 </td>
             </tr>
             <tr>
@@ -247,10 +256,9 @@
                         </tr>
                         <tr>
                             <td bgcolor="#e6e6e6" class="toc">
-                                <a href="#overview">&#187; Corporate Overview</a>
-                                <a href="#history">&#187; History &amp; Legacy</a>
-                                <a href="#foundation">&#187; Foundations (1939)</a>
-                                <a href="#lineage">&#187; Historical Lineage</a>
+                                <a href="#directory">&#187; Corporate Directory</a>
+                                <a href="#office-locations">&#187; Office Locations</a>
+                                <a href="#feedback-form">&#187; Web Feedback Form</a>
                             </td>
                         </tr>
                     </table>
@@ -266,7 +274,7 @@
                         </table>
                         <br>
                         <font size="1"><b>VISITOR NUMBER:</b></font><br>
-                        <span class="visitor-counter">0038419</span>
+                        <span class="visitor-counter">0038422</span>
                     </center>
                 </td>
                 <!-- Sidebar Navigation Ends -->
@@ -275,105 +283,150 @@
                 <td class="content" width="80%">
                     <div class="marquee-container">
                         <marquee behavior="scroll" direction="left" scrollamount="3">
-                            <font color="#cc0000" size="2"><b>ANNOUNCEMENT: Hisen Corp is celebrating 63 years of
-                                    business excellence! Check out our legacy page below.
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NEW: Broadband systems division successfully
-                                    launched!</b></font>
+                            <font color="#cc0000" size="2"><b>SUPPORT ADVISORY: Phone lines may experience brief
+                                    interruptions on Sunday, July 12th due to telecom switch upgrades. Please use fax or
+                                    online forms during this window.</b></font>
                         </marquee>
                     </div>
 
-                    <div id="overview">
-                        <table width="100%" bgcolor="#f0f0f0" cellpadding="8"
-                            style="border: 1px solid #cccccc; margin-bottom: 15px;">
+                    <div id="directory">
+                        <b>
+                            <font size="4" color="#002244">Corporate Departmental Directory</font>
+                        </b>
+                        <hr color="#002244" size="2">
+                        <p align="justify">
+                            For direct inquiries, please call or fax the appropriate department below. Standard business
+                            hours are 9:00 AM to 5:00 PM EST, Monday through Friday.
+                        </p>
+
+                        <table width="100%" border="1" cellpadding="6" cellspacing="0" bordercolor="#cccccc"
+                            style="border-collapse: collapse;">
+                            <tr bgcolor="#f0f0f0">
+                                <td width="30%"><b>Department</b></td>
+                                <td width="35%"><b>Telephone (Toll Free)</b></td>
+                                <td width="35%"><b>Fax Number</b></td>
+                            </tr>
                             <tr>
-                                <td>
-                                    <font size="4" color="#002244"><b>Hisen Corporate Mission</b></font>
-                                    <hr color="#002244" size="1">
-                                    <p align="justify">
-                                        Welcome to the official web portal of Hisen Corporation. Established at the dawn
-                                        of the mid-20th century, Hisen Corporation has remained a stalwart pioneer in
-                                        manufacturing, global telecommunications, and industrial automation solutions.
-                                        In an ever-shifting digital landscape, we are proud to launch our
-                                        high-performance web portal, optimized for the latest browsers and communication
-                                        devices. Explore our site to discover how Hisen is building the infrastructure
-                                        of the future.
-                                    </p>
-                                    <button type="button" onclick="location.href='about.html'">
-                                        <font size="2" color="#000000">Read Blogs</font>
-                                    </button>
-                                    &nbsp;
-                                    <button type="button" onclick="location.href='query.html'">
-                                        <font size="2" color="#000000">Request Information</font>
-                                    </button>
+                                <td><b>Main Corporate Headquarters</b></td>
+                                <td>1-800-555-HISEN (447-3600)</td>
+                                <td>(215) 555-0190</td>
+                            </tr>
+                            <tr>
+                                <td><b>Heavy Alloys &amp; Foundry Orders</b></td>
+                                <td>1-800-555-MELTS (635-8700)</td>
+                                <td>(215) 555-0194</td>
+                            </tr>
+                            <tr>
+                                <td><b>Broadband &amp; Optical Systems</b></td>
+                                <td>1-888-555-CABLE (222-5300)</td>
+                                <td>(408) 555-9201</td>
+                            </tr>
+                            <tr>
+                                <td><b>Investor Relations</b></td>
+                                <td>(215) 555-0112 (Ext. 402)</td>
+                                <td>(215) 555-0115</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <br><br>
+
+                    <div id="office-locations">
+                        <b>
+                            <font size="4" color="#002244">Corporate Office Addresses</font>
+                        </b>
+                        <hr color="#002244" size="2">
+                        <table width="100%" cellpadding="0" cellspacing="5">
+                            <tr>
+                                <td width="50%" valign="top"
+                                    style="border: 1px solid #cccccc; padding: 10px; background-color: #fafafa;">
+                                    <b>
+                                        <font color="#002244">Hisen Headquarters</font>
+                                    </b><br>
+                                    <font size="2">
+                                        Hisen Plaza, Suite 400<br>
+                                        1200 Industrial Avenue<br>
+                                        Allentown, PA 18103<br>
+                                        United States of America
+                                    </font>
+                                </td>
+                                <td width="50%" valign="top"
+                                    style="border: 1px solid #cccccc; padding: 10px; background-color: #fafafa;">
+                                    <b>
+                                        <font color="#002244">West Coast Technology Lab</font>
+                                    </b><br>
+                                    <font size="2">
+                                        Silicon Valley Development Center<br>
+                                        800 Fiber Optics Way<br>
+                                        Sunnyvale, CA 94089<br>
+                                        United States of America
+                                    </font>
                                 </td>
                             </tr>
                         </table>
                     </div>
 
-                    <div id="history">
+                    <br><br>
+
+                    <div id="feedback-form">
                         <b>
-                            <font size="4" color="#002244">Corporate History &amp; Legacy</font>
+                            <font size="4" color="#002244">Online Visitor Feedback Form</font>
                         </b>
                         <hr color="#002244" size="2">
                         <p align="justify">
-                            From humble beginnings to global leadership, Hisen Corporation's trajectory is marked by
-                            relentless dedication to quality and technological innovation. Over the course of six
-                            decades, we transitioned from local textile loom mechanics to pioneers of precision
-                            electronic components and global fiber-optic networks.
+                            Have an inquiry or a question about our operations? Please fill out our digital form below.
+                            Your message will be routed directly to our public relations terminal and processed within
+                            24 business hours.
                         </p>
-                        <p align="justify">
-                            Our team of world-class engineers, technicians, and visionaries work tirelessly around the
-                            clock to solve complex industrial bottlenecks. Today, our reach spans over fifteen
-                            countries, servicing hundreds of Fortune 500 enterprises with state-of-the-art telemetry and
-                            raw materials processing. Read more about our values on the <a href="about.html">About
-                                Us</a> page.
-                        </p>
-                    </div>
 
-                    <br>
-
-                    <div id="foundation">
-                        <b>
-                            <font size="4" color="#002244">Foundation (1939)</font>
-                        </b>
-                        <hr color="#002244" size="2">
-                        <p align="justify">
-                            In 1939, Hisen Corporation was formally registered with a simple, clear vision: deliver
-                            heavy industrial machinery built to last. Operating out of our first small foundry, our
-                            founder recognized that reliability was the ultimate differentiator. Despite the massive
-                            shifts in worldwide manufacturing, Hisen stayed true to this core design philosophy.
-                        </p>
-                        <p align="justify">
-                            Throughout the late 1940s and 1950s, we diversified into chemical synthesis and rubberized
-                            electrical insulation—components that proved critical as the global economy surged forward
-                            into the computing age. Our foundational focus on customer reliability is still the engine
-                            that drives us forward today.
-                        </p>
-                    </div>
-
-                    <br>
-
-                    <div id="lineage">
-                        <b>
-                            <font size="4" color="#002244">Historical Lineage Milestones</font>
-                        </b>
-                        <hr color="#002244" size="2">
-                        <ul>
-                            <li><b>1939:</b> Founded in Pennsylvania as Hisen Ironworks, specializing in textile loom
-                                components and gear assemblies.</li>
-                            <li><b>1952:</b> Opened the New Jersey Chemical Plant, entering plastics and heavy rubber
-                                insulation.</li>
-                            <li><b>1967:</b> Launched the Hisen Instruments division to produce early electronic
-                                telemetry systems.</li>
-                            <li><b>1978:</b> Developed our first high-capacity mainframe processing controller.</li>
-                            <li><b>1989:</b> Restructured into Hisen Corporation, merging raw manufacturing with
-                                emerging communications technology.</li>
-                            <li><b>1995:</b> Deployed our first corporate web portal on the World Wide Web.</li>
-                            <li><b>2001:</b> Commenced commercial deployment of broadband systems and optical networks.
-                            </li>
-                            <li><b>2002:</b> Released the enterprise portal v4.2 web standard for high-bandwidth
-                                corporate interactions.</li>
-                        </ul>
+                        <form action="#" method="get"
+                            onsubmit="alert('Thank you! Your feedback has been simulated as successfully sent. Under 2002 standards, this would have hit a Perl FormMail CGI script!'); return false;">
+                            <table width="100%" cellpadding="6" cellspacing="2" bgcolor="#f0f0f0"
+                                style="border: 2px outset #ffffff;">
+                                <tr>
+                                    <td width="30%" align="right"><b>Full Name:</b></td>
+                                    <td><input type="text" name="fullname" size="40" required placeholder="John Doe">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Email Address:</b></td>
+                                    <td><input type="email" name="email" size="40" required
+                                            placeholder="john.doe@netscape.net"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Inquiry Category:</b></td>
+                                    <td>
+                                        <select name="category" style="width: 280px;">
+                                            <option value="general">General Corporate Inquiry</option>
+                                            <option value="sales">Sales &amp; Steel/Chemical Logistics</option>
+                                            <option value="optical">Broadband / Optical Fiber Systems</option>
+                                            <option value="investor">Shareholder &amp; Financial Relations</option>
+                                            <option value="feedback">Website Bug / Feedback</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="top"><b>Message / Comments:</b></td>
+                                    <td><textarea name="comments" cols="45" rows="6" required
+                                            placeholder="Type your comment here..."></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Preferred Reply Method:</b></td>
+                                    <td>
+                                        <input type="radio" name="reply_by" value="email" checked> Email &nbsp;
+                                        <input type="radio" name="reply_by" value="phone"> Telephone &nbsp;
+                                        <input type="radio" name="reply_by" value="fax"> Fax &nbsp;
+                                        <input type="radio" name="reply_by" value="none"> Do not reply
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center" bgcolor="#cccccc">
+                                        <input type="submit" value="Send Feedback Profile">&nbsp;&nbsp;
+                                        <input type="reset" value="Reset Fields">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
                 </td>
                 <!-- Main Content Ends -->
@@ -420,7 +473,5 @@
         </table>
     </footer>
 </body>
-
-</html>
 
 </html>

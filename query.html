@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hisen Corporation - Welcome</title>
+    <title>Hisen Corporation - Product Query</title>
 </head>
 <style>
     body {
@@ -75,7 +75,9 @@
         margin-bottom: 15px;
     }
 
-    button {
+    button,
+    input[type="submit"],
+    input[type="reset"] {
         background-color: #cccccc;
         border: 2px outset #ffffff;
         padding: 3px 10px;
@@ -85,13 +87,20 @@
         cursor: pointer;
     }
 
-    button:active {
+    button:active,
+    input[type="submit"]:active,
+    input[type="reset"]:active {
         border: 2px inset #ffffff;
     }
 
-    input[type="search"] {
+    input[type="search"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
         border: 2px inset #ffffff;
-        padding: 2px;
+        padding: 3px;
         font-family: Arial, sans-serif;
         font-size: 12px;
         background-color: #ffffff;
@@ -214,8 +223,8 @@
         <table class="main-table" width="100%" cellpadding="0" cellspacing="0">
             <tr>
                 <td colspan="2" class="welcome-header">
-                    <font size="6"><b>Welcome to Hisen Corporation!</b></font><br>
-                    <font size="2"><i>"Bridging Yesterday's Foundations with Tomorrow's Innovations"</i></font>
+                    <font size="6"><b>Product &amp; Service Inquiry</b></font><br>
+                    <font size="2"><i>"Detailed Information on Hisen's Industrial Solutions"</i></font>
                 </td>
             </tr>
             <tr>
@@ -247,10 +256,8 @@
                         </tr>
                         <tr>
                             <td bgcolor="#e6e6e6" class="toc">
-                                <a href="#overview">&#187; Corporate Overview</a>
-                                <a href="#history">&#187; History &amp; Legacy</a>
-                                <a href="#foundation">&#187; Foundations (1939)</a>
-                                <a href="#lineage">&#187; Historical Lineage</a>
+                                <a href="#product-inquiry">&#187; Product Inquiry Form</a>
+                                <a href="#faqs">&#187; Frequently Asked Questions</a>
                             </td>
                         </tr>
                     </table>
@@ -266,7 +273,7 @@
                         </table>
                         <br>
                         <font size="1"><b>VISITOR NUMBER:</b></font><br>
-                        <span class="visitor-counter">0038419</span>
+                        <span class="visitor-counter">0038423</span>
                     </center>
                 </td>
                 <!-- Sidebar Navigation Ends -->
@@ -275,105 +282,110 @@
                 <td class="content" width="80%">
                     <div class="marquee-container">
                         <marquee behavior="scroll" direction="left" scrollamount="3">
-                            <font color="#cc0000" size="2"><b>ANNOUNCEMENT: Hisen Corp is celebrating 63 years of
-                                    business excellence! Check out our legacy page below.
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NEW: Broadband systems division successfully
-                                    launched!</b></font>
+                            <font color="#cc0000" size="2"><b>DATA INTEGRITY WARNING: Please do not submit sensitive
+                                    information through this unencrypted portal. For secure inquiries, please contact
+                                    our sales department via telephone.</b></font>
                         </marquee>
                     </div>
 
-                    <div id="overview">
-                        <table width="100%" bgcolor="#f0f0f0" cellpadding="8"
-                            style="border: 1px solid #cccccc; margin-bottom: 15px;">
-                            <tr>
-                                <td>
-                                    <font size="4" color="#002244"><b>Hisen Corporate Mission</b></font>
-                                    <hr color="#002244" size="1">
-                                    <p align="justify">
-                                        Welcome to the official web portal of Hisen Corporation. Established at the dawn
-                                        of the mid-20th century, Hisen Corporation has remained a stalwart pioneer in
-                                        manufacturing, global telecommunications, and industrial automation solutions.
-                                        In an ever-shifting digital landscape, we are proud to launch our
-                                        high-performance web portal, optimized for the latest browsers and communication
-                                        devices. Explore our site to discover how Hisen is building the infrastructure
-                                        of the future.
-                                    </p>
-                                    <button type="button" onclick="location.href='about.html'">
-                                        <font size="2" color="#000000">Read Blogs</font>
-                                    </button>
-                                    &nbsp;
-                                    <button type="button" onclick="location.href='query.html'">
-                                        <font size="2" color="#000000">Request Information</font>
-                                    </button>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div id="history">
+                    <div id="product-inquiry">
                         <b>
-                            <font size="4" color="#002244">Corporate History &amp; Legacy</font>
+                            <font size="4" color="#002244">Hisen Product &amp; Service Information Request</font>
                         </b>
                         <hr color="#002244" size="2">
                         <p align="justify">
-                            From humble beginnings to global leadership, Hisen Corporation's trajectory is marked by
-                            relentless dedication to quality and technological innovation. Over the course of six
-                            decades, we transitioned from local textile loom mechanics to pioneers of precision
-                            electronic components and global fiber-optic networks.
+                            Utilize the form below to request detailed specifications, pricing, and availability for any
+                            of Hisen's industrial products or services. A Hisen representative will process your request
+                            within 48 business hours.
                         </p>
-                        <p align="justify">
-                            Our team of world-class engineers, technicians, and visionaries work tirelessly around the
-                            clock to solve complex industrial bottlenecks. Today, our reach spans over fifteen
-                            countries, servicing hundreds of Fortune 500 enterprises with state-of-the-art telemetry and
-                            raw materials processing. Read more about our values on the <a href="about.html">About
-                                Us</a> page.
-                        </p>
+
+                        <form action="#" method="get"
+                            onsubmit="alert('Your product inquiry has been simulated as successfully sent. A representative will contact you shortly via your preferred method. We appreciate your interest in Hisen!'); return false;">
+                            <table width="100%" cellpadding="6" cellspacing="2" bgcolor="#f0f0f0"
+                                style="border: 2px outset #ffffff;">
+                                <tr>
+                                    <td width="30%" align="right"><b>Your Full Name:</b></td>
+                                    <td><input type="text" name="fullname" size="40" required placeholder="Jane Smith">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Company / Organization:</b></td>
+                                    <td><input type="text" name="company" size="40" placeholder="Acme Corp"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Email Address:</b></td>
+                                    <td><input type="email" name="email" size="40" required
+                                            placeholder="jane.smith@acmecorp.com"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Telephone Number:</b></td>
+                                    <td><input type="tel" name="phone" size="20" placeholder="555-123-4567"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Area of Interest:</b></td>
+                                    <td>
+                                        <select name="interest_area" style="width: 280px;">
+                                            <option value="general_info">General Product Information</option>
+                                            <option value="metal_alloys">Heavy Metal Alloys &amp; Foundries</option>
+                                            <option value="chemical_polymers">Chemical Synthetics &amp; Polymers
+                                            </option>
+                                            <option value="telecom_solutions">Broadband &amp; Telecommunication Systems
+                                            </option>
+                                            <option value="automation_systems">Industrial Automation &amp; Robotics
+                                            </option>
+                                            <option value="parts_servicing">Spare Parts &amp; Field Servicing</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="top"><b>Specific Product(s) / Details of Inquiry:</b></td>
+                                    <td><textarea name="inquiry_details" cols="45" rows="8" required
+                                            placeholder="Describe your needs..."></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><b>Urgency:</b></td>
+                                    <td>
+                                        <input type="radio" name="urgency" value="low" checked> Low (Standard Reply)
+                                        &nbsp;
+                                        <input type="radio" name="urgency" value="medium"> Medium (24-Hour Reply) &nbsp;
+                                        <input type="radio" name="urgency" value="high"> High (ASAP)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center" bgcolor="#cccccc">
+                                        <input type="submit" value="Submit Product Inquiry">&nbsp;&nbsp;
+                                        <input type="reset" value="Clear Form">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
                     </div>
 
-                    <br>
+                    <br><br>
 
-                    <div id="foundation">
+                    <div id="faqs">
                         <b>
-                            <font size="4" color="#002244">Foundation (1939)</font>
+                            <font size="4" color="#002244">Frequently Asked Questions</font>
                         </b>
                         <hr color="#002244" size="2">
-                        <p align="justify">
-                            In 1939, Hisen Corporation was formally registered with a simple, clear vision: deliver
-                            heavy industrial machinery built to last. Operating out of our first small foundry, our
-                            founder recognized that reliability was the ultimate differentiator. Despite the massive
-                            shifts in worldwide manufacturing, Hisen stayed true to this core design philosophy.
-                        </p>
-                        <p align="justify">
-                            Throughout the late 1940s and 1950s, we diversified into chemical synthesis and rubberized
-                            electrical insulation—components that proved critical as the global economy surged forward
-                            into the computing age. Our foundational focus on customer reliability is still the engine
-                            that drives us forward today.
-                        </p>
-                    </div>
 
-                    <br>
+                        <p><b>Q: How can I obtain a product catalog?</b><br>
+                            A: Our complete product catalog is available by postal mail. Please use the form above to
+                            request a copy, indicating "Product Catalog Request" in the inquiry details.</p>
 
-                    <div id="lineage">
-                        <b>
-                            <font size="4" color="#002244">Historical Lineage Milestones</font>
-                        </b>
-                        <hr color="#002244" size="2">
-                        <ul>
-                            <li><b>1939:</b> Founded in Pennsylvania as Hisen Ironworks, specializing in textile loom
-                                components and gear assemblies.</li>
-                            <li><b>1952:</b> Opened the New Jersey Chemical Plant, entering plastics and heavy rubber
-                                insulation.</li>
-                            <li><b>1967:</b> Launched the Hisen Instruments division to produce early electronic
-                                telemetry systems.</li>
-                            <li><b>1978:</b> Developed our first high-capacity mainframe processing controller.</li>
-                            <li><b>1989:</b> Restructured into Hisen Corporation, merging raw manufacturing with
-                                emerging communications technology.</li>
-                            <li><b>1995:</b> Deployed our first corporate web portal on the World Wide Web.</li>
-                            <li><b>2001:</b> Commenced commercial deployment of broadband systems and optical networks.
-                            </li>
-                            <li><b>2002:</b> Released the enterprise portal v4.2 web standard for high-bandwidth
-                                corporate interactions.</li>
-                        </ul>
+                        <p><b>Q: Do you offer international shipping?</b><br>
+                            A: Yes, Hisen Corporation ships to over 50 countries worldwide. Please specify your shipping
+                            destination in the inquiry form for a detailed quote.</p>
+
+                        <p><b>Q: What is the typical lead time for custom orders?</b><br>
+                            A: Lead times vary significantly based on product complexity and current manufacturing load.
+                            For an accurate estimate, please submit a detailed inquiry outlining your custom
+                            requirements.</p>
+
+                        <p><b>Q: Is technical support available for legacy products?</b><br>
+                            A: Hisen is committed to supporting our products for their full lifecycle. Limited technical
+                            documentation and spare parts may be available for older models. Please submit an inquiry
+                            with your product model number for assistance.</p>
                     </div>
                 </td>
                 <!-- Main Content Ends -->
@@ -420,7 +432,5 @@
         </table>
     </footer>
 </body>
-
-</html>
 
 </html>
