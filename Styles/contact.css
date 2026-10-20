@@ -1,0 +1,147 @@
+body {
+    background-color: #5c7f96;
+    /* Classic teal/blue-gray background of early 2000s */
+    margin: 10px;
+    padding: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+a:link {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551a8b;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.nav-table {
+    background-color: #d6d6d6;
+    border: 2px outset #ffffff;
+}
+
+.nav-table td {
+    padding: 5px;
+}
+
+.main-table {
+    background-color: #ffffff;
+    border: 2px outset #ffffff;
+}
+
+.sidebar {
+    background-color: #e6e6e6;
+    border-right: 2px inset #ffffff;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.content {
+    background-color: #ffffff;
+    vertical-align: top;
+    padding: 15px;
+}
+
+.welcome-header {
+    background-color: #002244;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border: 2px inset #ffffff;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.marquee-container {
+    background-color: #ffffcc;
+    padding: 5px;
+    border: 1px dashed #ff0000;
+    margin-bottom: 15px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #cccccc;
+    border: 2px outset #ffffff;
+    padding: 3px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+    border: 2px inset #ffffff;
+}
+
+input[type="search"],
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    border: 2px inset #ffffff;
+    padding: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: #ffffff;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #000000;
+    margin: 10px 0;
+}
+
+.nav-links a {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.toc a {
+    display: block;
+    margin: 3px 0;
+    font-size: 11px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.visitor-counter {
+    background-color: #000000;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    padding: 2px 6px;
+    border: 2px inset #ffffff;
+    letter-spacing: 2px;
+}
+
+.footer-text {
+    font-size: 11px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
