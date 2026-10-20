@@ -13,7 +13,10 @@ This project contains a lightweight retro-themed web page or collection of pages
 
 ## Run locally
 
-Because this is a static HTML project, you can view it by opening the `index.html` file directly in a browser.
+Because this is a static HTML project, you can view it by opening the `index.html` file directly in a browser. 
+- Open the index.html file in VS Code and press F5. 
+- Use Live Server extension to run the index.html file.
+
 
 Alternatively, you can serve it locally from the project folder using a simple HTTP server:
 
